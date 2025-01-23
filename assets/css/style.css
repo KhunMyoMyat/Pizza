@@ -1,0 +1,38 @@
+/* global starts */
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Signika:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Singnika";
+  transition: 0.5s;
+}
+
+:root {
+  --primary: #ffa400;
+  --gray: #555;
+  --bg-gray: #f9f9f9;
+  --white: #eee;
+  --bg-dark: #202020;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Chewy";
+}
+
+a {
+  text-decoration: none;
+}
+/* global ends */
