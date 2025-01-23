@@ -65,6 +65,7 @@ nav .logo {
   padding: 0.7rem;
   cursor: pointer;
   background: transparent;
+  display: none;
 }
 
 nav .navbar li {
@@ -78,5 +79,58 @@ nav .navbar li a {
   display: block;
   padding: 0.7rem;
 }
+.navbar li a:hover {
+  color: var(--gray);
+}
 
 /* nav ends */
+
+/* media queies */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 980px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 550px;
+  }
+
+  /* nav starts */
+  nav {
+    position: relative;
+  }
+  nav #toggle {
+    display: block;
+  }
+  nav .navbar {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background: var(--white);
+    border-top: 1px solid var(--gray);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  nav .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  nav .navbar li {
+    display: block;
+    text-align: center;
+  }
+  /* nav ends */
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
