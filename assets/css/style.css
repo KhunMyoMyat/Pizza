@@ -88,11 +88,39 @@ nav .navbar li a {
 /* home starts */
 #home .home-slide {
   height: 37rem;
+  position: relative;
 }
 #home .home-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+#home .home-slide .content {
+  position: absolute;
+  color: var(--white);
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(7px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home .home-slide .content h1 {
+  color: var(--primary);
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+#home .home-slide .content h2 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 /* home ends */
 
