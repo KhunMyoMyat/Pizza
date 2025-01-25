@@ -293,6 +293,38 @@ nav .navbar li a {
 }
 /* info ends */
 
+/* footer starts */
+footer {
+  background: var(--bg-dark);
+  color: #fff;
+  padding: 5rem 0.5rem;
+  text-align: center;
+}
+
+footer p {
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer .divider {
+  background: var(--primary);
+  width: 15rem;
+  height: 0.1rem;
+  margin: 0 auto;
+}
+
+footer .social {
+  margin: 1rem 0;
+}
+
+footer .social a {
+  color: var(--white);
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+}
+/* footer ends */
+
 /* media queies */
 @media (max-width: 1200px) {
   .container {
