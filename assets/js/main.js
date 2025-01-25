@@ -20,3 +20,20 @@ $(document).ready(function () {
     autoplayTimeout: 5000,
   });
 });
+
+const up = document.querySelector("#up");
+
+window.onscroll = function () {
+  if (window.scrollY > 950) {
+    up.classList.add("active");
+  } else {
+    up.classList.remove("active");
+  }
+};
+
+up.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};

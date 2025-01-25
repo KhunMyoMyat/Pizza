@@ -340,7 +340,7 @@ footer .social a {
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 100;
-  /* display: none; */
+  display: none;
 }
 
 #up.active {
