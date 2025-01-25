@@ -35,6 +35,28 @@ a {
 a {
   text-decoration: none;
 }
+
+section {
+  padding: 5rem 0.5rem;
+}
+
+.title {
+  color: var(--primary);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
+}
+
+.title::after {
+  content: "";
+  width: 7rem;
+  height: 0.1rem;
+  margin: 2rem auto;
+  display: block;
+  background: var(--primary);
+}
 /* global ends */
 
 /* nav starts */
@@ -168,10 +190,38 @@ nav .navbar li a {
 /* about ends */
 
 /* gallery starts */
+#gallery {
+  background: var(--bg-gray);
+}
+
+#gallery .gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#gallery .gallery-content .card {
+  flex: 1 0 20rem;
+}
+
+#gallery .gallery-content .card .card-img {
+  width: 100%;
+  height: 15rem;
+}
 #gallery .gallery-content .card .card-img img {
-  height: 300px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
+}
+
+#gallery .gallery-content .card .card-body {
+  background: #fff;
+  padding: 1.5rem;
+}
+
+#gallery .gallery-content .card .card-body h2 {
+  color: var(--primary);
 }
 /* gallery ends */
 
