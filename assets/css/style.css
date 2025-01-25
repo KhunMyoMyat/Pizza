@@ -225,6 +225,44 @@ nav .navbar li a {
 }
 /* gallery ends */
 
+/* contact starts */
+#contact form {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#contact form .form-input {
+  width: 47%;
+}
+
+#contact form .form-input input,
+#contact form .form-input textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--white);
+}
+
+#contact form .form-input input::placeholder,
+#contact form .form-input textarea::placeholder {
+  font-size: 1rem;
+}
+
+#contact form button {
+  width: 100%;
+  background: var(--white);
+  border: 1px solid var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--bg-dark);
+  padding: 1rem;
+}
+/* contact ends */
+
 /* media queies */
 @media (max-width: 1200px) {
   .container {
@@ -277,6 +315,11 @@ nav .navbar li a {
     text-align: center;
   }
   /* nav ends */
+
+  /* contact */
+  #contact form .form-input {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
